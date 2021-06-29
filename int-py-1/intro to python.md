@@ -1,4 +1,4 @@
-<span style="color:blue; font-family: 'times new roman'; font-size: 3em;">INTRODUCTION TO PYTHON </span>
+***INTRODUCTION TO PYTHON***
 
 <span style="color:RED; font-family: 'times new roman'; font-size: 2em;">WHAT IS PYTHON </span>
 
