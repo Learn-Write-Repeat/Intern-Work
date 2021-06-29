@@ -1,64 +1,58 @@
-***INTRODUCTION TO PYTHON***
+# ***INTRODUCTION TO PYTHON***
 
-<span style="color:RED; font-family: 'times new roman'; font-size: 2em;">WHAT IS PYTHON </span>
+## **WHAT IS PYTHON**  🤔
 
-
-<span style="color:black;font-size:1.3em;font-family:caveat;"> ***Python*** is a ***high-level open-source programming language***, which means that both humans and machines can understand it. It is among the most widely used programming languages because of its easiness while working compared to other languages like ***C, C++, JAVA,*** etc </span>
-
-
-<span style="color:#ff8000; font-family: 'times new roman'; font-size: 2em;">HISTORY OF PYTHON </span>
+***Python*** is a ***high-level open-source programming language***, which means that both humans and machines can understand it. It is among the most widely used programming languages because of its easiness while working compared to other languages like ***C, C++, JAVA,*** etc 
 
 
-<span style="color:BLACK;font-size:1.25em; font-family:caveat;"> ***Python*** was originated in the late ***1980s*** by a Dutch programmer ***Guido van Rossum*** for whom he was the ***benevolent dictator for life (BDPL)***until ***July 2018***. There were many python versions like ***python2 and python3*** present most of them are using ***python3.*** </span>
+## **HISTORY OF PYTHON** :crown:
 
-<span style="color:#28B463 ; font-family: times new roman; font-size: 2em;">WHO CAN LEARN PYTHON.</span>
+ ***Python*** was originated in the late ***1980s*** by a Dutch programmer ***Guido van Rossum*** for whom he was the ***benevolent dictator for life (BDPL)*** until ***July 2018***. There were many python versions like ***python2 and python3*** present most of them are using ***python3.*** 
+
+## **WHO CAN LEARN PYTHON.** :computer: :boy: :man:
 
 <span style="color:BLACK;font-size:1.25em; font-family:caveat;"> Any ***beginner*** interested in the beautiful world of ***programming*** can learn ***python*** because it is a programming language that everyone can ***understand*** without having knowledge in it. </span>
 
-<span style="color:#A569BD ; font-family: times new roman; font-size: 2em;">WHY PYTHON?</span>
+## **WHY PYTHON?**  🤔
 
 
-<span style="color:black; font-family: caveat; font-size:1.25em;">Here are few ***Advantages*** of python because of which ***python*** is chosen by a wide range of people. </span>
+Here are few ***Advantages*** of python because of which ***python*** is chosen by a wide range of people. 
 
-<span style="color:black; font-family: caveat; font-size:1.25em;">1. ***Python*** is ***open source*** and is used for ***community development.***</span>
+1. ***Python*** is ***open source*** and is used for ***community development.***
 
-<span style="color:black; font-family: caveat; font-size:1.25em;">2. It is easy to ***learn and understand.***</span>
+2. It is easy to ***learn and understand.***
 
-<span style="color:black; font-family: caveat; font-size:1.25em;">3.  It ***portable*** and it is ***interactive.***</span>
+3.  It ***portable*** and it is ***interactive.***
 
-<span style="color:black; font-family: caveat; font-size:1.25em;">4. It is an ***object-oriented programming language*** and also a ***high-level programming language.***</span>
+4. It is an ***object-oriented programming language*** and also a ***high-level programming language.***
 
+5. It is a ***dynamically*** typed programming language that means no need to mention the ***data type*** based on the value assigned.
 
-<span style="color:black; font-family: caveat; font-size:1.25em;">5. It is a ***dynamically*** typed programming language that means no need to mention the ***data type*** based on the value assigned.</span>
-
-<span style="color:black; font-family: caveat; font-size:1.25em;">6. It has extensive help of ***libraries like NumPy, pandas, so on..***</span>
-
+6. It has extensive help of ***libraries like NumPy, pandas, so on..***.
 
 
-<span style="color:#29FB07 ; font-family: times new roman; font-size: 2em;">APPLICATIONS OF PYTHON</span>
 
-<span style="color:black; font-family: caveat; font-size:1.25em;">***Web Development***: Using libraries like **Flask** and **Django** websites can be developed. </span>
+## **APPLICATIONS OF PYTHON** :clipboard:
 
-<span style="color:black; font-family: caveat; font-size:1.25em;">***Machine Learning***: It is branch of ***Artificial Intelligence*** where it consists of vast range of ***libraries.*** </span>
+***Web Development***: Using libraries like **Flask** and **Django** websites can be developed. 
 
-<span style="color:black; font-family: caveat; font-size:1.25em;">***Prototyping***: It is nothing but the ***models*** which are used to ***explain the design of the application or system*** in brief to the ***clients***. </span>
+***Machine Learning***: It is branch of ***Artificial Intelligence*** where it consists of vast range of ***libraries.*** :bar_chart:
 
-<span style="color:black; font-family: caveat; font-size:1.25em;">***GUI based applications***: ***Python Libraries*** are used to develop ***Games*** or ***Scientific Applications***. </span>
+***Prototyping***: It is nothing but the ***models*** which are used to ***explain the design of the application or system*** in brief to the ***clients***. 
+
+***GUI based applications***: ***Python Libraries*** are used to develop ***Games*** or ***Scientific Applications***. :video_game:
 
 
-<span style="color:#A569BD; font-family: times new roman; font-size: 2em;">INSTALLATION OF PYTHON</span>
+## **INSTALLATION OF PYTHON** :computer:
 
-<span style="color:black; font-family: caveat; font-size:1.25em;">***System requirements for Python Installation:*** </span>
+***System requirements for Python Installation:*** 
 
 1. Operating system: **Linux- Ubuntu 16.04 to 17.10, or Windows 7 to 10, with 2GB RAM (4GB preferable)**
 2. You have to install **Python 3.6** and related packages, please follow the **installation**
 instructions given below as per your **operating system**
 
 
-
-
-
-<span style="color:brown; font-family: times new roman; font-size: 1.5em;"> Procedure to install **Python 3** on **Windows OS:**</span>
+## Procedure to install **Python 3** on **Windows OS:**
 
 
 <span style="color:orange; font-family: times new roman; font-size: 1.4em;">**Install Python 3.8:**</span>
@@ -73,11 +67,10 @@ Windows x86 executable installer for 32 bits OS**
 procedure.
 6. **Follow the instructions as per the installer.**
 
+**Important Note: After double clicking the installer, check mark the option “Add Python 3.8 to PATH”**
 
-<span style="color:RED; font-family: times new roman; font-size: 1.3em;">Important Note: After double clicking the installer, check mark the option “Add Python 3.8 to PATH”
 
-
-<span style="color:purple; font-family: times new roman; font-size: 1.3em;">Check if Python is Installed Correctly:</span>
+**Check if Python is Installed Correctly:** :heavy_check_mark:
 
 
 
@@ -85,7 +78,7 @@ procedure.
 2. **Run the command “python --version” or “python3 --version” in the cmd window and press Enter.**
 3. **You should get an Output Python 3.8 (or an output resembling this)**
 
-<span style="color:#A569BD; font-family: times new roman; font-size: 1.3em;">Install Numpy, Matplotlib and Ipython:</span>
+**Install Numpy, Matplotlib and Ipython:**
 
 1.Open the cmd window (Click here to see how to open cmd window)
 
@@ -95,8 +88,7 @@ procedure.
 -  python -m pip install ipython
 -  python -m pip install matplotlib
 
-
-<span style="color:#A569BD; font-family: times new roman; font-size: 1.3em;">Check if Numpy, Matplotlib and Ipython are Installed Correctly:</span>
+**Check if Numpy, Matplotlib and Ipython are Installed Correctly:** :heavy_check_mark:
 
 1.Open the cmd window (Click here to see how to open cmd window)
 
@@ -120,11 +112,11 @@ In[1]: _
 
 7.Press Enter
 
-8.If all commands are executed without throwing any errors/exceptions as output (no other output will be displayed), then the packages are installed successfully
+8.If all commands are executed without throwing any errors/exceptions as output (no other output will be displayed), then the packages are installed successfully.
 
 
 
-<span style="color:orange; font-family: times new roman; font-size: 1.3em;">The procedure to install Python 3 on Ubuntu Linux Os. </span>
+**The procedure to install Python 3 on Ubuntu Linux Os.**
 
 
 
@@ -146,7 +138,7 @@ iv. Press Enter.
 
 b. For Ubuntu 17.10 and above, the system already comes with Python 3.6installed by default
 
-<span style="color:orange; font-family: times new roman; font-size: 1.3em;">Check if Python is Installed Correctly:</span>
+**Check if Python is Installed Correctly:** :heavy_check_mark:
 
 1.Open the terminal by pressing Ctrl + Alt + T keys together.
 
@@ -174,7 +166,7 @@ b. python -m pip install ipython
 c. python -m pip install matplotlib
 
 
-<span style="color:#A569BD; font-family: times new roman; font-size: 1.3em;">Check if Numpy, Matplotlib and Ipython are Installed Correctly:</span>
+**Check if Numpy, Matplotlib and Ipython are Installed Correctly:** :heavy_check_mark:
 
 1.Open the terminal by pressing Ctrl + Alt + T keys together.
 
@@ -200,13 +192,13 @@ In[1]: _
 
 8.If all commands are executed without throwing any errors/exceptions as output (no other output will be displayed), then the packages are installed successfully.
 
-<span style="color:blue; font-family: 'times new roman'; font-size: 2.5em;">BASIC PYTHON SYNTAX </span>
+## ***BASIC PYTHON SYNTAX*** :memo:
 
-1. Print()
+**1. Print()**
 
-<span style="color:black; font-family: caveat; font-size:1.25em;">All of us would have learned other ***programming language*** with evergreen example of printing **"Hello world !!!"**. It's same for ***python,*** like any other programming language ***print function*** is the most important and baby step that you take while learning any particular language.</span>
+All of us would have learned other ***programming language*** with evergreen example of printing **"Hello world !!!"**. It's same for ***python,*** like any other programming language ***print function*** is the most important and baby step that you take while learning any particular language.
 
-<span style="color:black; font-family: caveat; font-size:1.25em;">***Print function prints the specified message or text on the screen, or other standard output device.***</span>
+***Print function prints the specified message or text on the screen, or other standard output device.***
  
 
 <span style="color:black; font-family: caveat; font-size:1.25em;">Lets begin by printing **"Hello World !"** example.</span>
@@ -413,7 +405,7 @@ print("Hello, World!")
     Hello, World!
     
 
-<span style="color:Red; font-family: 'times new roman'; font-size: 2em;">Python Identifiers</span>
+## ***Python Identifiers***
 
 - ***Identifier is the name given to a variable,function,class, module or other objects.***
 - ***An identifier can begin with an alphabet (A-Z or a-z), or an underscore(_) and can include any number of letters,digits,or underscores***
@@ -424,8 +416,7 @@ print("Hello, World!")
 ***space is not allowed***
 - My_Name                   
 ***cannot start with a digit, can use underscore(_)***
-
-<span style="color:orange; font-family: 'times new roman'; font-size: 2em;">Reserved Keywords</span>
+## ***Reserved Keywords*** :page_with_curl:
 
 - ***Python has a list of reserved words known as keywords.***
 - ***every keyword has a specific purpose and use***
