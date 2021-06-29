@@ -1,3 +1,12 @@
+<p align="center">
+   <img src="https://miro.medium.com/max/1200/1*PPIp7twJJUknfohZqtL8pQ.png" alt="Python Programming"
+        width="600" height="200">
+   <br />
+   <b> INTRODUCTION TO PYTHON</b>
+   <br />
+   
+   <br />
+</p>
 
 
 
