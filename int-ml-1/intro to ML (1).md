@@ -40,7 +40,7 @@
 
 
 
-<img src="https://www.google.com/search?q=what+is+machine+learning&rlz=1C1ONGR_enIN954IN954&sxsrf=ALeKk01Pt_tKtAEbz3q2bMNvPGVtL2_Y9Q:1625036700426&source=lnms&tbm=isch&sa=X&ved=2ahUKEwjB_5m65b7xAhXfwzgGHYk4BZ0Q_AUoAnoECAEQBA&biw=1280&bih=577#imgrc=NnICEg50RdF-xM">
+<img src="https://www.google.com/search?q=what+is+machine+learning&rlz=1C1ONGR_enIN954IN954&sxsrf=ALeKk01Pt_tKtAEbz3q2bMNvPGVtL2_Y9Q:1625036700426&source=lnms&tbm=isch&sa=X&ved=2ahUKEwjB_5m65b7xAhXfwzgGHYk4BZ0Q_AUoAnoECAEQBA&biw=1280&bih=577#imgrc=tL75W2Gg067-6M">
 
 
 
