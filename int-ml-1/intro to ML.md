@@ -1,3 +1,4 @@
+![Types-of-Machine-Learning-algorithms](https://user-images.githubusercontent.com/83321708/123916371-32c91b00-d99f-11eb-8976-4a90aa144aee.jpg)
 # <b>`DevIncept` 
 
 # Introduction to Machine Learning   🤖 
