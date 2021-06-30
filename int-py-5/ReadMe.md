@@ -1,5 +1,5 @@
 ## Team: int-py-5
-# Topic: _Loops in Python
+# Topic: _Loops in Python_
 ---
 ## List of Content
 - Introduction
