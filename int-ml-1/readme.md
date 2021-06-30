@@ -10,4 +10,4 @@ For example, a wearable fitness tracker like Fitbit, or an intelligent home assi
 
 
 
-So letss go and have a look on Machine Learning Introduction
+So letss go and have a look on Machine Learning Introduction>>
