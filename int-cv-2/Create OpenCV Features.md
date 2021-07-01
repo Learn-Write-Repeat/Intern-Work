@@ -207,7 +207,7 @@ array([[ 0,  1],
 ```
 
 - **Applications of Cropping:**
-    - **It is used to remove the unwanted part of the image.
+    - It is used to remove the unwanted part of the image.
     - It can be used to focus on important part of the image
 
 ### Edge Detection
@@ -231,7 +231,7 @@ Thresholding is an OpenCV technique that involves assigning pixel values in rela
     - cv.THRESH_TRUNC: If the pixel intensity value exceeds the threshold, it is truncated to that value. The threshold is set to the same value as the pixel values. The rest of the values stay the same.
     - cv.THRESH_TOZERO: For all pixels with an intensity less than the threshold value, the intensity is set to 0.
     The inverted or opposite case of cv2.THRESH_TOZERO is cv.THRESH_TOZERO INV.
-- **Applications of Erosion and Dilation:**
+- **Applications of Thresholding:**
     - Thresholding is a widely used segmentation technique for distinguishing between foreground and background objects.
     - In Computer Vision, this technique of thresholding is done on grayscale images. As a result, the image must be converted to grayscale colour space first.
 
