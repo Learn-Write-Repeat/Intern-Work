@@ -26,7 +26,7 @@ In this ideal situation, we would split the data into *training*, *validation*, 
 
 A model with fewer parameters is less complex, and because of this, is preferred because it is likely to generalize better on average.
 
-![Image2](model_selection2.png)
+<img src='model_selection2.png' alt='Image2' width='500'/>
 
 ## Hyper-Parameters Selection
 
