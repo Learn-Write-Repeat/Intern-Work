@@ -8,6 +8,8 @@
 
 We evaluate or assess candidate models in order to choose the best one, and this is **model selection**. Whereas once a model is chosen, it can be evaluated in order to communicate how well it is expected to perform in general; this is **model assessment**.
 
+![Image1](model_selection.png)
+
 A ***good enough*** model may refer to many things and is specific to your project, such as:
 
 *	A model that meets the requirements and constraints of project stakeholders.
@@ -24,11 +26,15 @@ In this ideal situation, we would split the data into *training*, *validation*, 
 
 A model with fewer parameters is less complex, and because of this, is preferred because it is likely to generalize better on average.
 
+![Image2](model_selection2.png)
+
 ## Hyper-Parameters Selection
 
 A ***hyperparameter*** can be loosely defined as a parameter that is not tuned during the learning phase that optimizes the main objective function on the training set. While a simple grid search would yield the optimal hyperparameters by trying all possible combinations of hyper parameters, it does not scale as the number of hyperparameters and the data set size increase. As a result, investigators typically choose hyperparameters arbitrarily, after a series of manual trials, which can sometimes cast doubts on the results as investigators might have been tempted to tune the parameters specifically for the test set.
 
 For example, the *tree depth* in a decision tree model and the *number of layers* in an artificial neural network are typical hyperparameters. The performance of a model can drastically depend on the choice of its hyperparameters. A decision tree can yield good results for moderate tree depth and have very bad performance for very deep trees.
+
+![Image3](model_selection3.png)
 
 There are basically four methods for choosing hyper-parameters:
 
