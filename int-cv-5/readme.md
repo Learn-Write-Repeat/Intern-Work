@@ -31,7 +31,7 @@ img = cv2.imread("fuzzy.png",1)
 cv2.imshow("Original",img)
 #if you're running it in colab,use from google.colab.patches import cv2_imshow statement before cv2.imshow 
 ```
-[!Alt Countours](https://github.com/sreelakshmig009/Intern-Work/blob/main/int-cv-5/Contours.png)
+[!github image]https://github.com/sreelakshmig009/Intern-Work/blob/main/int-cv-5/Original.png
 
 ### Converting the image to Gray Scale
 ```
