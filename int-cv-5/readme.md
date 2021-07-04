@@ -24,7 +24,7 @@ import random
 
 ### Reading the noisy image
 ```
-img = cv2.imread("fuzzy.png",1)
+img = cv2.imread(path,1)
 ```
 ### Displaying to see how it looks
 ```
@@ -51,6 +51,7 @@ thresh = cv2.adaptiveThreshold(blur, 255, cv2.ADAPTIVE_THRESH_GAUSSIAN_C, cv2.TH
 ```
 cv2.imshow("Binary",thresh)
 ```
+<img src="https://github.com/sreelakshmig009/Intern-Work/blob/main/int-cv-5/Binary.png">
 ### Finding contours with simple retrieval (no hierarchy) and simple/compressed end points
 ```
 _, contours, _ = cv2.findContours(thresh, cv2.RETR_LIST, cv2.CHAIN_APPROX_SIMPLE)
@@ -95,6 +96,7 @@ for c in contours:
 ```
 cv2.imshow("Contours",objects)
 ```
+<img src="https://github.com/sreelakshmig009/Intern-Work/blob/main/int-cv-5/Contours.png">
 ### Destroy all open windows and release functions
 ```
 cv2.waitKey(0)
