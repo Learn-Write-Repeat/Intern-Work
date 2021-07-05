@@ -1,6 +1,7 @@
 # Shape Detection Using OpenCV
 
-OpenCV is a huge open-source library for computer vision, machine learning, and image processing.OpenCV supports a wide variety of programming languages like Python, C++, Java, etc. It can process images and videos to identify objects, faces, or even the handwriting of a human. 
+OpenCV is a huge open-source library for computer vision, machine learning, and image processing.
+OpenCV supports a wide variety of programming languages like Python, C++, Java, etc. It can process images and videos to identify objects, faces, or even the handwriting of a human. 
 
 In this ,we will learn how to detect shapes of objects by finding their contours. Contours are basically outline that bound the shape or form of an object. So we will be detecting multiple shapes and how many corners points each shape has along with its area .
 
