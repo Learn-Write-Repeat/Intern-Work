@@ -1,3 +1,101 @@
+# Preprocessing
+
+**IMPORTING LABRARIES**
+
+The very frst and most important part of the data preprocessing is importing the libraries.Librareries are imported in the format given below in the code line the frst library that we have imported is pandas which is used for data exploring and cleaning after that we have imported numpy which is used for implementing large array functions and mathematical functions in our dataset next we have to import matplotlib and seborn which are used to plot graphs for better visualization of our data.
+
+    import pandas as pd
+
+    import numpy as np
+
+    import matplotlib.pyplot as plt
+
+    %matplotlib inline
+
+    import seaborn as sns
+
+**IMPORTING DATASET**
+
+The next task in data preprocessing is to import the dataset. So for importing the dataset frst we have to know the location of our data that where it is stored in our device after that we have to use our pandas library to call the function read\_csv from which we can import our dataset
+
+    sample=pd.read_csv('SampleSuperstore.csv')
+
+After importing the dataset our next job has to be checking and cleaing our dataset. This is the important step towards the data exploration because if we do not clean our dataset and just working on it as it is there will be lots of mistakes and inaccurate data there and that will create a lots of problem in implementing our model on it as it will leads to some useless results that will of no use to us.So in cleaning the datast our frst part is to check wheater our dataset have null or 0 values in it. These values are no use and hence it is very important to eliminate that. This is can be done by the below code.
+
+**CHECKING NULL VALUES**
+
+    sample.isnull().sum()
+
+The second step in cleaning the dataset after eliminating null values is dropping the duplicate values as duplicate values will misleads our exploration of dataset and might leads to some inappropriate results so it becomes important to drop these values this can be done by using the below code
+
+**DROPPING DUPLICATES**
+
+    sample.drop_duplicates()
+
+The last important step that is involved in data checking and cleaning is checking the uniqe values so it bascially involves that how many different values are present in our data set this helps a lot in selection for models and other data visulization.
+
+**UNIQUE VALUES**
+
+    sample.unique()
+ 
+# Data-Set Examination
+
+## Exploratory Data Analysis
+
+Exploratory data analysis is the process of analyzing and interpreting datasets while summarizing their particular characteristics with the help of data visualization methods.
+
+### Importing the dataset
+
+    import pandas as pd
+    import matplotlib.pyplot as plt
+    import seaborn as sns
+    import warnings
+    warnings.filterwarnings('ignore')
+    
+    import pandas as pd
+    pima_df = pd.read_csv('pima.csv')
+    iris_df= pd.read_csv('iris.csv')
+
+### Printing the first five rows
+
+    pima_df.head(5)
+
+![pimaHead](pima_head.png)
+
+    iris_df.head(5)
+
+![irisHead](iris_head.png)
+
+### Shape of the dataset
+
+![shape](shape.png)
+
+### Descriptive Statistics
+
+    pima_df.describe().transpose()
+
+![descr1](descr1.png)
+
+    iris_df.describe().transpose()
+
+![descr2](descr2.png)
+
+### Checking the correlation among different features
+
+    pima_df.corr()
+
+![corr](corr.png)
+
+### Getting the information about datatypes of columns and information about null values
+
+    pima_df.info()
+
+![info](info.png)
+
+
+
+
+
 # Model Selection and Hyper-Parameters Selection
 
 ## Model Selection
