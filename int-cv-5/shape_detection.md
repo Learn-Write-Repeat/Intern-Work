@@ -16,15 +16,15 @@ Approach that we have used:
 *Finally printed the output image file
  
 
-### Create a file called ShapeDetection
+### Create a file called ShapeDetection:
 Open a file in your favorite editor and save it as ShapeDetection.py
 
 
-### Import open-cv library
+### Import open-cv library:
 ```
 import cv2
 ```
-### Create a function to extract the contours from the image
+### Create a function to extract the contours from the image:
 ```
 def getContours(img):
     contours , heirarchy = cv2.findContours(img,cv2.RETR_EXTERNAL,cv2.CHAIN_APPROX_NONE)
@@ -34,24 +34,24 @@ def getContours(img):
 for cnt in contours:
         area = cv2.contourArea(cnt)
 ```
-### Draw the contours for each shape
+### Draw the contours for each shape:
 Within the loop
 ```
 if area >100:
             cv2.drawContours(imgContours,cnt,-1,(0,0,0),2)
 ```
-### Create a variable to extract the perimeter
+### Create a variable to extract the perimeter:
 ```
 peri = cv2.arcLength(cnt,True)
 ```
-### Create a variable to extract the vertices
+### Create a variable to extract the vertices:
 ```
 approx = cv2.approxPolyDP(cnt,0.02*peri,True)
 objectCor = len(approx)
 # compute the bounding box of the contour and use the bounding box to compute the aspect ratio
 x,y,w,h = cv2.boundingRect(approx)
 ```
-### State if conditions to recognise the shape
+### State if conditions to recognise the shape:
 ```
  # if the shape is a triangle, it will have 3 vertices
 if objectCor == 3:
@@ -76,17 +76,17 @@ elif objectCor > 6:
 else:
      objectType = "None"
 ```
-### Assign the rgb color for the text that is used to indicate the shape
+### Assign the rgb color for the text that is used to indicate the shape:
 ```
 cv2.rectangle(imgContours,(x,y),(x+w,y+h),(0,255,0),2)
 cv2.putText(imgContours,objectType,(x+(w//2)-10,y+(h//2)-10),cv2.FONT_HERSHEY_COMPLEX,0.7,(0,0,255),2)
 ```
-### Read the input image
+### Read the input image:
 ```
 path = "path/to/image"
 img = cv2.imread(path)
 ```
-### Create variable to apply Contours,Grayscale,Gaussian Blur and Canny and call getContours() function
+### Create variable to apply Contours,Grayscale,Gaussian Blur and Canny and call getContours() function:
 ```
 imgContours = img.copy()
 imgGray = cv2.cvtColor(img,cv2.COLOR_BGR2GRAY)
@@ -94,17 +94,21 @@ imgBlur = cv2.GaussianBlur(imgGray,(7,7),1)
 imgCanny = cv2.Canny(imgBlur,50,50)
 getContours(imgCanny)
 ```
-### Print the input
+### Print the input:
 ```
 cv2.imshow("Shapes",img)
 cv2.imshow("output",imgContours)
 
 cv2.waitKey(0)
+
+#cv2 waitkey() allows you to wait for a specific time in milliseconds until you press any button on the keyword. It accepts time in milliseconds as an argument.
 ```
 ## We used this image for input
 <img src = "https://github.com/sreelakshmig009/Intern-Work/blob/main/int-cv-5/Images/test.jpg">
 
 ## And this was the output
-<img src = "https://github.com/sreelakshmig009/Intern-Work/blob/main/int-cv-5/Images/Image.png">
+<img src = "https://github.com/sreelakshmig009/Intern-Work/blob/main/int-cv-5/Images/Shapes.png">
+<br>
+<img src = "https://github.com/sreelakshmig009/Intern-Work/blob/main/int-cv-5/Images/output.png">
 
 Refer this repository for the source code
