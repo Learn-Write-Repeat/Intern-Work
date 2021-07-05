@@ -32,13 +32,13 @@ def getContours(img):
 ### Loop over the contours:
 ```
 for cnt in contours:
-        area = cv2.contourArea(cnt)
+     area = cv2.contourArea(cnt)
 ```
 ### Draw the contours for each shape:
 Within the loop
 ```
 if area >100:
-            cv2.drawContours(imgContours,cnt,-1,(0,0,0),2)
+     cv2.drawContours(imgContours,cnt,-1,(0,0,0),2)
 ```
 ### Create a variable to extract the perimeter:
 ```
