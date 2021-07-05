@@ -120,7 +120,7 @@ cv2 waitkey() allows you to wait for a specific time in milliseconds until you p
 cv2.destroyAllWindows()
 ```
 ## We used this image for input
-<img src = "https://github.com/sreelakshmig009/Intern-Work/blob/main/int-cv-5/test.jpg">
+<img src = "https://github.com/sreelakshmig009/Intern-Work/blob/main/int-cv-5/Images/Image.png">
 
 ## And this was the output
 <img src = "https://github.com/sreelakshmig009/Intern-Work/blob/main/int-cv-5/Image.png">
