@@ -6,10 +6,10 @@ In this ,we will learn how to detect shapes of objects by finding their contours
 
 Approach that we have used:
 
--Created a file called ShapeDetection and written functions to detect the shapes based on the contours and output the shape accordingly
--Imported ShapeDetection inside another file called detect_shapes 
-- Preprocessed the image file by applying threshold and GaussianBlur
-- Finally printed the output image file
+*Created a file called ShapeDetection and written functions to detect the shapes based on the contours and output the shape accordingly
+*Imported ShapeDetection inside another file called detect_shapes 
+*Preprocessed the image file by applying threshold and GaussianBlur
+*Finally printed the output image file
  
 
 ### Create a file called ShapeDetection
@@ -118,6 +118,8 @@ cv2.destroyAllWindows()
 ```
 ## We used this image for input
 <img src = "https://github.com/sreelakshmig009/Intern-Work/blob/main/int-cv-5/test.jpg">
+
 ## And this was the output
 <img src = "https://github.com/sreelakshmig009/Intern-Work/blob/main/int-cv-5/Image.png">
+
 Refer this repository for the source code
