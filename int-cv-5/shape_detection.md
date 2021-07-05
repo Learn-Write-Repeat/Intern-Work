@@ -123,6 +123,6 @@ cv2.destroyAllWindows()
 <img src = "https://github.com/sreelakshmig009/Intern-Work/blob/main/int-cv-5/Images/Image.png">
 
 ## And this was the output
-<img src = "https://github.com/sreelakshmig009/Intern-Work/blob/main/int-cv-5/Image.png">
+<img src = "https://github.com/sreelakshmig009/Intern-Work/blob/main/int-cv-5/Images/Image.png">
 
 Refer this repository for the source code
