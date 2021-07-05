@@ -6,7 +6,7 @@
      |-|-|
      |1|[G Sreelakshmi]()|
      |2|[Debashis Saha]()|
-     |3|[Govind]()|
+     |3|[Govind Jaiswal]()|
 
 - **About the topic:** 
     - This topic consists of creating a python script to detect shapes using openCV library.
@@ -23,4 +23,4 @@
 - Work flow :bookmark_tabs:
     - [Debashis Saha](): Worked on writing the code.
     - [G Sreelakshmi](): Worked on markdown and drafting pull request.
-    - [Govind](): Worked on Video making and editing.
+    - [Govind Jaiswal](): Worked on Video making and editing.
