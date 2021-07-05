@@ -24,101 +24,82 @@ Open a file in your favorite editor and save it as ShapeDetection.py
 ```
 import cv2
 ```
-### Create a ShapeDetector class and Initialise an _init_ method
+### Create a function to extract the contours from the image
 ```
-def __init__(self):
-        pass
+def getContours(img):
+    contours , heirarchy = cv2.findContours(img,cv2.RETR_EXTERNAL,cv2.CHAIN_APPROX_NONE)
 ```
-### Within the class ,create another method called detect and define it
+### Loop over the contours:
 ```
-def detect(self, c):
-        # initialize the shape name and approximate the contour
-        shape = "unidentified"
-        peri = cv2.arcLength(c, True)
-        approx = cv2.approxPolyDP(c, 0.04 * peri, True)
+for cnt in contours:
+        area = cv2.contourArea(cnt)
 ```
-### State if conditions to detect the shapes based on the number of vertices
+### Draw the contours for each shape
+Within the loop
+```
+if area >100:
+            cv2.drawContours(imgContours,cnt,-1,(0,0,0),2)
+```
+### Create a variable to extract the perimeter
+```
+peri = cv2.arcLength(cnt,True)
+```
+### Create a variable to extract the vertices
+```
+approx = cv2.approxPolyDP(cnt,0.02*peri,True)
+objectCor = len(approx)
+# compute the bounding box of the contour and use the bounding box to compute the aspect ratio
+x,y,w,h = cv2.boundingRect(approx)
+```
+### State if conditions to recognise the shape
 ```
  # if the shape is a triangle, it will have 3 vertices
-        if len(approx) == 3:
-            shape = "Triangle"
-            
-        elif len(approx) == 10:
-            shape = "Star"
+if objectCor == 3:
+    objectType = "Triangle"
+# if the shape has 4 vertices, it is either a square or a rectangle
+elif objectCor == 4:
+    assRatio = w/float(h)
+    if assRatio >0.95 and assRatio<1.05:
+       objectType = "Square"
+    else:
+       objectType = "Rectangle"
+# if the shape is a pentagon, it will have 5 vertices
+elif objectCor == 5:
+    objectType = "Pentagon"
+# if the shape is a hexagon, it will have 6 vertices
+elif objectCor == 6 :
+     objectType = "Hexagon"
+# if none of of the above cases are then it must be a circle
+elif objectCor > 6:
+     objectType = "Circle"
+# if it neither matches the shape nor is a cirle, we print None
+else:
+     objectType = "None"
+```
+### Assign the rgb color for the text that is used to indicate the shape
+```
+cv2.rectangle(imgContours,(x,y),(x+w,y+h),(0,255,0),2)
+cv2.putText(imgContours,objectType,(x+(w//2)-10,y+(h//2)-10),cv2.FONT_HERSHEY_COMPLEX,0.7,(0,0,255),2)
+```
+### Read the input image
+```
+path = "path/to/image"
+img = cv2.imread(path)
+```
+### Create variable to apply Contours,Grayscale,Gaussian Blur and Canny and call getContours() function
+```
+imgContours = img.copy()
+imgGray = cv2.cvtColor(img,cv2.COLOR_BGR2GRAY)
+imgBlur = cv2.GaussianBlur(imgGray,(7,7),1)
+imgCanny = cv2.Canny(imgBlur,50,50)
+getContours(imgCanny)
+```
+### Print the input
+```
+cv2.imshow("Shapes",img)
+cv2.imshow("output",imgContours)
 
-
-        # if the shape has 4 vertices, it is either a square or
-        # a rectangle
-        elif len(approx) == 4:
-            # compute the bounding box of the contour and use the
-            # bounding box to compute the aspect ratio
-            (x, y, w, h) = cv2.boundingRect(approx)
-            ar = w / float(h)
-
-            # a square will have an aspect ratio that is approximately
-            # equal to one, otherwise, the shape is a rectangle
-            shape = "Square" if ar >= 0.95 and ar <= 1.05 else "Rectangle"
-
-        # if the shape is a pentagon, it will have 5 vertices
-        elif len(approx) == 5:
-            shape = "pentagon"
-
-        # otherwise, we assume the shape is a circle
-        else:
-            shape = "circle"
-```
-### Return the shape variable's output and save this file
-```
-return shape
-```
-### Create another python file called detect_shapes
-Create a new file and save it as detect_shapes.py
-
-### Import the neccessary libraries and also the previously created ShapeDetection
-```
-from ShapeDetection import ShapeDetector
-import imutils
-import cv2
-```
-### Read and resize the image accordingly
-```
-image = cv2.imread(image_path)
-resized = imutils.resize(image, width=300)
-ratio = image.shape[0] / float(resized.shape[0])
-```
-### Apply grayscale and threshold on the image
-We will now convert the image into grayscale and apply threshold using cv2.threshold of openCv.Thresholding is a technique in OpenCV, which is the assignment of pixel values in relation to the threshold value provided. In thresholding, each pixel value of the image is compared with the threshold value.
-```
-gray = cv2.cvtColor(resized, cv2.COLOR_BGR2GRAY)S
-blurred = cv2.GaussianBlur(gray, (5, 5), 0)
-thresh1,thresh2 = cv2.threshold(blurred, 210, 255, cv2.THRESH_BINARY_INV)
-```
-### Find contours in the image and call the ShapeDetector() class of ShapeDetection module
-To find contours,we will be using cv2.findContours() function of openCV
-```
-cnts = cv2.findContours(thresh2.copy(), cv2.RETR_LIST, cv2.CHAIN_APPROX_SIMPLE)
-cnts = imutils.grab_contours(cnts)
-sd = ShapeDetector()
-```
-### Loop over the contours
-```
-for c in cnts:
-    M = cv2.moments(c)
-    cX = int((M["m10"] / M["m00"]) * ratio)
-    cY = int((M["m01"] / M["m00"]) * ratio)
-    shape = sd.detect(c)
-    c = c.astype("float")
-    c *= ratio
-    c = c.astype("int")
-    cv2.drawContours(image, [c], -1, (0, 255, 0), 2)
-    cv2.putText(image, shape, (cX, cY), cv2.FONT_HERSHEY_SIMPLEX, 0.5, (255, 255, 255), 2)
-    cv2.imshow("Image", image)
-    cv2.waitKey(0)
-```
-cv2 waitkey() allows you to wait for a specific time in milliseconds until you press any button on the keyword. It accepts time in milliseconds as an argument.
-### Close all the windows after the output is displayed and viewed 
-```
-cv2.destroyAllWindows()
+cv2.waitKey(0)
 ```
 ## We used this image for input
 <img src = "https://github.com/sreelakshmig009/Intern-Work/blob/main/int-cv-5/Images/test.jpg">
