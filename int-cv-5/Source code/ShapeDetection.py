@@ -23,7 +23,7 @@ def getContours(img):
                 objectType = "Pentagon"
             elif objectCor == 6 :
                 objectType = "Hexagon"
-            elif objectCor > 6:
+            elif objectCor > 6 and objectCor<=8:
                 objectType = "Circle"
             else:
                 objectType = "None"
