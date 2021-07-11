@@ -60,37 +60,40 @@ Exploratory data analysis is the process of analyzing and interpreting datasets 
 
     pima_df.head(5)
 
-![pimaHead](pima_head.png)
+![pimaHead](images/pima_head.png)
 
     iris_df.head(5)
 
-![irisHead](iris_head.png)
+![irisHead](images/iris_head.png)
 
 ### Shape of the dataset
 
-![shape](shape.png)
+    iris_df.shape
+    pima_df.shape
+
+![shape](images/shape.png)
 
 ### Descriptive Statistics
 
     pima_df.describe().transpose()
 
-![descr1](descr1.png)
+![descr1](images/descr1.png)
 
     iris_df.describe().transpose()
 
-![descr2](descr2.png)
+![descr2](images/descr2.png)
 
 ### Checking the correlation among different features
 
     pima_df.corr()
 
-![corr](corr.png)
+![corr](images/corr.png)
 
 ### Getting the information about datatypes of columns and information about null values
 
     pima_df.info()
 
-![info](info.png)
+![info](images/info.png)
 
 
 
@@ -106,7 +109,7 @@ Exploratory data analysis is the process of analyzing and interpreting datasets 
 
 We evaluate or assess candidate models in order to choose the best one, and this is **model selection**. Whereas once a model is chosen, it can be evaluated in order to communicate how well it is expected to perform in general; this is **model assessment**.
 
-![Image1](model_selection.png)
+![Image1](images/model_selection.png)
 
 A ***good enough*** model may refer to many things and is specific to your project, such as:
 
@@ -124,7 +127,7 @@ In this ideal situation, we would split the data into *training*, *validation*, 
 
 A model with fewer parameters is less complex, and because of this, is preferred because it is likely to generalize better on average.
 
-<img src='model_selection2.png' alt='Image2' width='500'/>
+<img src='images/model_selection2.png' alt='Image2' width='500'/>
 
 ## Hyper-Parameters Selection
 
@@ -132,7 +135,7 @@ A ***hyperparameter*** can be loosely defined as a parameter that is not tuned d
 
 For example, the *tree depth* in a decision tree model and the *number of layers* in an artificial neural network are typical hyperparameters. The performance of a model can drastically depend on the choice of its hyperparameters. A decision tree can yield good results for moderate tree depth and have very bad performance for very deep trees.
 
-![Image3](model_selection3.png)
+![Image3](images/model_selection3.png)
 
 There are basically four methods for choosing hyper-parameters:
 
