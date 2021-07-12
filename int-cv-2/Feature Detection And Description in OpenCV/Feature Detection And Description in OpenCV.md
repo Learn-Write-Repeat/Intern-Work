@@ -4,11 +4,13 @@
 
 *  ***What is Feature Detection and Description?***
 
-   <img src="https://github.com/sreelakshmig009/Intern-Work/blob/main/int-cv-2/Feature%20Detection%20And%20Description%20in%20OpenCV/Images/WhatsApp%20Image%202021-07-12%20at%2014.10.19.jpeg"> 
-   
    * We humans distinguish one thing or object from another flawlessly in our daily lives because we don't pay attention to how this happens; it's all pre-programmed in our brain.
  
    * If we see an image or item, we look at it intently and try to uncover a pattern that will help us distinguish it from others, and this all happens in the background.
+
+
+<img src="https://github.com/sreelakshmig009/Intern-Work/blob/main/int-cv-2/Feature%20Detection%20And%20Description%20in%20OpenCV/Images/WhatsApp%20Image%202021-07-12%20at%2014.10.19.jpeg"> 
+   
    
    * When we look at the above image, our brain begins to notice a pattern, such as the black box representing the sky, the white box representing the building's windows, and the red box representing the building's walls.
    
