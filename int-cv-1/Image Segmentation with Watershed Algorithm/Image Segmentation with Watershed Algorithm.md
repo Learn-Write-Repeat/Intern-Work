@@ -342,7 +342,7 @@ plt.show()
 
 <p align="center">
    <img src="https://github.com/SamarthMR/Intern-Work/blob/main/int-cv-1/images/output_24_0.png" alt="Marker-based Watershed Image"
-	width="800" height="400"
+	width="1000" height="600"
 </p>
 
 
