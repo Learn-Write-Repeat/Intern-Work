@@ -35,7 +35,7 @@ points.plot([1, 4, 9, 13],[1,11,2,16])
 
 
     
-![png](Line Graph, Bar Plot/output_3_1.png)
+![png](output_3_1.png)
     
 
 
@@ -52,7 +52,7 @@ plt.show()
 
 
     
-![png](Line Graph, Bar Plot/output_4_0.png)
+![png](output_4_0.png)
     
 
 
@@ -71,7 +71,7 @@ plt.show()
 
 
     
-![png](Line Graph, Bar Plot/output_5_0.png)
+![png](output_5_0.png)
     
 
 
@@ -101,7 +101,7 @@ plt.legend()
 
 
     
-![png](Line Graph, Bar Plot/output_7_1.png)
+![png](output_7_1.png)
     
 
 
@@ -129,7 +129,7 @@ plt.legend()
 
 
     
-![png](Line Graph, Bar Plot/output_8_1.png)
+![png](output_8_1.png)
     
 
 
@@ -157,7 +157,7 @@ plt.legend()
 
 
     
-![png](Line Graph, Bar Plot/output_9_1.png)
+![png](output_9_1.png)
     
 
 
@@ -187,7 +187,7 @@ plt.plot(students,marks,'m--')
 
 
     
-![png](Line Graph, Bar Plot/output_10_1.png)
+![png](output_10_1.png)
     
 
 
@@ -222,7 +222,7 @@ plt.show()
 
 
     
-![png](Line Graph, Bar Plot/output_12_0.png)
+![png](output_12_0.png)
     
 
 
@@ -240,7 +240,7 @@ plt.show()
 
 
     
-![png](Line Graph, Bar Plot/output_13_0.png)
+![png](output_13_0.png)
     
 
 
@@ -267,7 +267,7 @@ plt.show()
 
 
     
-![png](Line Graph, Bar Plot/output_14_0.png)
+![png](output_14_0.png)
     
 
 
@@ -303,7 +303,7 @@ plt.show()
 
 
     
-![png](Line Graph, Bar Plot/output_16_0.png)
+![png](output_16_0.png)
     
 
 
@@ -333,7 +333,7 @@ plt.show()
 
 
     
-![png](Line Graph, Bar Plot/output_18_0.png)
+![png](output_18_0.png)
     
 
 
@@ -359,7 +359,7 @@ plt.show()
 
 
     
-![png](Line Graph, Bar Plot/output_20_0.png)
+![png](output_20_0.png)
     
 
 
@@ -382,7 +382,7 @@ plt.show()
 
 
     
-![png](Line Graph, Bar Plot/output_21_0.png)
+![png](output_21_0.png)
     
 
 
@@ -397,6 +397,6 @@ plt.show()
 
 
     
-![png](Line Graph, Bar Plot/output_22_0.png)
+![png](output_22_0.png)
     
 
