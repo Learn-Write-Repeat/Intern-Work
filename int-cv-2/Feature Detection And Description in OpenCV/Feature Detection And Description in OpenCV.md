@@ -52,7 +52,7 @@ It simply compares the descriptor of one feature in the first set to all other f
 
 FLANN stands for Fast Library for Nearest Neighbors. It comprises a number of algorithms for determining Nearest Neighbors and is faster than a brute-force matcher.
 
-<a href="https://github.com/sreelakshmig009/Intern-Work/tree/main/int-cv-2/Feature%20Detection%20And%20Description%20in%20OpenCV/Soruce%20Code">
+<a href="https://github.com/sreelakshmig009/Intern-Work/tree/main/int-cv-2/Feature%20Detection%20And%20Description%20in%20OpenCV/Source%20Code">
   Get the code example here
 </a>
 
