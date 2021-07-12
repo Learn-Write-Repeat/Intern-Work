@@ -36,8 +36,9 @@ We shall start by finding an approximate estimate of the coins. For that, we wil
 
 Below is the picture before applying Otsu's thresholding:
 
-![Dev_coins.jpg](attachment:Dev_coins.jpg)
-#### <center>Input Image<center>
+<p align="center">
+   <img src="https://github.com/SamarthMR/Intern-Work/blob/main/int-cv-1/images/Dev_coins.jpg" alt="Input Image"
+</p>
 
 
 ```python
@@ -61,8 +62,9 @@ plt.show()
 
 
     
-![png](output_8_0.png)
-    
+<p align="center">
+   <img src="https://github.com/SamarthMR/Intern-Work/blob/main/int-cv-1/images/output_8_0.png" alt="Output Image"
+</p>
 
 
 The right side of the image above is the output image after applying Otsu's Thresholding.
@@ -105,10 +107,10 @@ plt.title("morphologyEx"), plt.xticks([]), plt.yticks([])
 plt.show()
 ```
 
-
     
-![png](output_13_0.png)
-    
+<p align="center">
+   <img src="https://github.com/SamarthMR/Intern-Work/blob/main/int-cv-1/images/output_13_0.png" alt="Opening"
+</p>
 
 
 The above output is obtained when the **Opening** effect is applied to the sample.  
@@ -142,11 +144,10 @@ plt.title("morphologyEx"), plt.xticks([]), plt.yticks([])
 plt.show()
 ```
 
-
+<p align="center">
+   <img src="https://github.com/SamarthMR/Intern-Work/blob/main/int-cv-1/images/output_15_0.png" alt="Closing"
+</p>
     
-![png](output_15_0.png)
-    
-
 
 The above output is obtained when the **Closing** effect is applied to the sample.  
 But, the Closing seems to be working fairly better and even with 2x2 kernel.
@@ -193,12 +194,11 @@ plt.subplot(224),plt.imshow(sure_bg, 'gray')
 plt.title("Dilation"), plt.xticks([]), plt.yticks([])
 plt.show()
 ```
-
-
     
-![png](output_19_0.png)
+<p align="center">
+   <img src="https://github.com/SamarthMR/Intern-Work/blob/main/int-cv-1/images/output_19_0.png" alt="Closing"
+</p>
     
-
 
 ## **Distance Transform & Threshold**
 
@@ -261,11 +261,10 @@ plt.tight_layout()
 plt.show()
 ```
 
-
+<p align="center">
+   <img src="https://github.com/SamarthMR/Intern-Work/blob/main/int-cv-1/images/output_22_0.png" alt="Closing"
+</p>
     
-![png](output_22_0.png)
-    
-
 
 ## **Marker-based Watershed**
 
@@ -340,12 +339,12 @@ plt.tight_layout()
 plt.show()
 ```
 
-
+<p align="center">
+   <img src="https://github.com/SamarthMR/Intern-Work/blob/main/int-cv-1/images/output_24_0.png" alt="Closing"
+</p>
     
-![png](output_24_0.png)
-    
 
-
-The result obtained doesn't look successful as expected during the process, especially during the Dilation and Thresholding process. We have used very small dilation and threshold. Probably, most failures occured due to the glossy coins. So, we had to come up with a method to deal with those coins, therefore **Marker-based Watershed Algorithm** was used to obtain the required results.
+The result obtained doesn't look successful as expected during the process, especially during the Dilation and Thresholding process. We have used very small dilation and threshold.
+Probably, most failures occured due to the glossy coins. So, we had to come up with a method to deal with those coins, therefore **Marker-based Watershed Algorithm** was used to obtain the required results.
 
 
