@@ -2,9 +2,9 @@
 
 *  ***What is Feature Detection and Description?***
 
-   * We humans distinguish one thing or object from another flawlessly in our daily lives because we don't pay attention to how this happens; it's all pre-programmed in our brain.
-
    <img src="https://github.com/sreelakshmig009/Intern-Work/blob/main/int-cv-2/Feature%20Detection%20And%20Description%20in%20OpenCV/Images/WhatsApp%20Image%202021-07-12%20at%2014.10.19.jpeg"> 
+   
+   * We humans distinguish one thing or object from another flawlessly in our daily lives because we don't pay attention to how this happens; it's all pre-programmed in our brain.
  
    * If we see an image or item, we look at it intently and try to uncover a pattern that will help us distinguish it from others, and this all happens in the background.
    
@@ -28,19 +28,19 @@
 
    * SURF (Speeded-Up Robust Features)
 
-SIFT is excellent, but it's slower, so people need a faster version for Features detection therefore in early 2006, three people, H. Bay, T. Tuytelaars, and L. Van Gool, released a paper presenting a new algorithm called SURF.
+* SIFT is excellent, but it's slower, so people need a faster version for Features detection therefore in early 2006, three people, H. Bay, T. Tuytelaars, and L. Van Gool, released a paper presenting a new algorithm called SURF.
    
    * FAST algorithm (Features from Accelerated Segment Test)
 
-All of the above algorithms are beneficial in some way, but they aren't very useful in real-world applications, which is why Edward Rosten and Tom Drummond introduced this approach in their work "Machine learning for high-speed corner identification" in 2006, and later refined it in 2010.
+* All of the above algorithms are beneficial in some way, but they aren't very useful in real-world applications, which is why Edward Rosten and Tom Drummond introduced this approach in their work "Machine learning for high-speed corner identification" in 2006, and later refined it in 2010.
 
    * BRIEF (Binary Robust Independent Elementary Features)
 
-SIFT uses floating-point numbers, so its take 512bytes dim vector for descriptors while SURF uses 256 bytes for descriptors. Creating this vector for thousands of features takes a lot of memory, which is challenging for resource-constrained applications like embedded devices. That is why BRIEF was invented in, and it is a faster method for calculating and matching feature descriptors. One disadvantage is that it simply uses features descriptors; to acquire the final output, we must utilise feature detection.
+* SIFT uses floating-point numbers, so its take 512bytes dim vector for descriptors while SURF uses 256 bytes for descriptors. Creating this vector for thousands of features takes a lot of memory, which is challenging for resource-constrained applications like embedded devices. That is why BRIEF was invented in, and it is a faster method for calculating and matching feature descriptors. One disadvantage is that it simply uses features descriptors; to acquire the final output, we must utilise feature detection.
 
    * ORB(Oriented FAST and Rotated BRIEF)
 
-SIFT and SURF are useful in their own right, but what if you have to pay a hefty annual fee to use them in your applications. Because they are patented, we must pay to use them. To address this issue, OpenCV developers created ORB(Oriented FAST and Rotated BRIEF), a new free alternative to SIFT and SURF.
+* SIFT and SURF are useful in their own right, but what if you have to pay a hefty annual fee to use them in your applications. Because they are patented, we must pay to use them. To address this issue, OpenCV developers created ORB(Oriented FAST and Rotated BRIEF), a new free alternative to SIFT and SURF.
 
 <b>Once we learn about feature detection and description we need to know about how that feature is going to match with other images in OpenCV we have two methods to do this task as follows:</b>
       
