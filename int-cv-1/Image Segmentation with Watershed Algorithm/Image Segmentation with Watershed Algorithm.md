@@ -61,6 +61,7 @@ plt.show()
 
 <p align="center">
    <img src="https://github.com/SamarthMR/Intern-Work/blob/main/int-cv-1/images/output_8_0.png" alt="Output Image"
+	width="600" height="600"
 </p>
 
 
