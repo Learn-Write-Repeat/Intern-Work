@@ -2,7 +2,7 @@
 ***
 *  ***What is Feature Detection and Description?***
 
-   We humans distinguish one thing or object from another flawlessly in our daily lives because we don't pay attention to how this happens; it's all pre-programmed in our brain.      
+   We humans distinguish one thing or object from another flawlessly in our daily lives because we don't pay attention to how this happens; it's all pre-programmed in our brain.      <br>
    If we see an image or item, we look at it intently and try to uncover a pattern that will help us distinguish it from others, and this all happens in the background.
    
    When we look at the above image, our brain begins to notice a pattern, such as the black box representing the sky, the white box representing the building's windows, and the red box representing the building's walls.
