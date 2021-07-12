@@ -1,5 +1,5 @@
 # Topic: Feature Detection And Description in OpenCV
-***
+
 *  ***What is Feature Detection and Description?***
 
    * We humans distinguish one thing or object from another flawlessly in our daily lives because we don't pay attention to how this happens; it's all pre-programmed in our brain.     
@@ -10,3 +10,8 @@
    * All of these characteristics may be discovered simply by looking at the photograph.We can look for this feature in other photos or objects once we've found it in this one.
    
    * This method is called <b>Feature Detection</b>, and after we locate a feature, we describe it in our own words, such as a black box representing the sky, a white box representing a window, and so on.
+ 
+   * We seek for the same features in other photographs by describing the feature, which is known as Feature Description.
+
+   * The computer does the same thing by describing the region around the box so that it can discover it in other images and objects.
+ 
