@@ -107,6 +107,7 @@ plt.show()
 
 <p align="center">
    <img src="https://github.com/SamarthMR/Intern-Work/blob/main/int-cv-1/images/output_13_0.png" alt="Opening Image"
+	width="600" height="300"
 </p>
     
 
@@ -143,6 +144,7 @@ plt.show()
 
 <p align="center">
    <img src="https://github.com/SamarthMR/Intern-Work/blob/main/int-cv-1/images/output_15_0.png" alt="Closing Image"
+	width="600" height="300"
 </p>
     
 
@@ -194,6 +196,7 @@ plt.show()
 
 <p align="center">
    <img src="https://github.com/SamarthMR/Intern-Work/blob/main/int-cv-1/images/output_19_0.png" alt="Dilated Image"
+	width="600" height="300"
 </p>
     
 
@@ -260,6 +263,7 @@ plt.show()
 
 <p align="center">
    <img src="https://github.com/SamarthMR/Intern-Work/blob/main/int-cv-1/images/output_22_0.png" alt="Distance Transform & Thresholding Image"
+	width="600" height="300"
 </p>
     
 
@@ -338,6 +342,7 @@ plt.show()
 
 <p align="center">
    <img src="https://github.com/SamarthMR/Intern-Work/blob/main/int-cv-1/images/output_24_0.png" alt="Marker-based Watershed Image"
+	width="600" height="300"
 </p>
 
 
