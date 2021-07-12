@@ -2,7 +2,7 @@
 
 ## **Image Segmentation with Watershed Algorithm**
 
-_The [file]("https://github.com/SamarthMR/Intern-Work/blob/main/int-cv-1/Image%20Segmentation%20with%20Watershed%20Algorithm/Image%20Segmentation%20with%20Watershed%20Algorithm.md")() covers the basics and advanced level of Image Segmentation with Watershed Algortihm._
+_The [Image Segmentation with Watershed Algorithm]("https://github.com/SamarthMR/Intern-Work/blob/main/int-cv-1/Image%20Segmentation%20with%20Watershed%20Algorithm/Image%20Segmentation%20with%20Watershed%20Algorithm.md")(file) covers the basics and advanced level of Image Segmentation with Watershed Algortihm._
 
 ### **Contents**
 
