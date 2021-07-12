@@ -36,9 +36,8 @@ We shall start by finding an approximate estimate of the coins. For that, we wil
 
 Below is the picture before applying Otsu's thresholding:
 
-<p align="center">
-   <img src="https://github.com/SamarthMR/Intern-Work/blob/main/int-cv-1/images/Dev_coins.jpg" alt="Input Image"
-</p>
+![Dev_coins.jpg](attachment:Dev_coins.jpg)
+#### <center>Input Image<center>
 
 
 ```python
@@ -46,7 +45,7 @@ import numpy as np
 import cv2
 from matplotlib import pyplot as plt
 
-img = cv.imread('C:/Users/mrsam/Downloads/Dev_coins.jpg')
+img = cv2.imread('C:/Users/mrsam/Downloads/Dev_coins.jpg')
 b,g,r = cv2.split(img)
 rgb_img = cv2.merge([r,g,b])
 
@@ -54,17 +53,16 @@ gray = cv2.cvtColor(img,cv2.COLOR_BGR2GRAY)
 ret, thresh = cv2.threshold(gray,0,255,cv2.THRESH_BINARY_INV+cv2.THRESH_OTSU)
 
 plt.subplot(121),plt.imshow(rgb_img)
-plt.title('Input Image'), plt.xticks([]), plt.yticks([])
+plt.title('Input Image', color='y'), plt.xticks([]), plt.yticks([])
 plt.subplot(122),plt.imshow(thresh, 'gray')
-plt.title("Otus's binary threshold"), plt.xticks([]), plt.yticks([])
+plt.title("Otus's binary threshold", color='y'), plt.xticks([]), plt.yticks([])
 plt.show()
 ```
 
 
     
-<p align="center">
-   <img src="https://github.com/SamarthMR/Intern-Work/blob/main/int-cv-1/images/output_8_0.png" alt="Output Image"
-</p>
+![png](output_8_0.png)
+    
 
 
 The right side of the image above is the output image after applying Otsu's Thresholding.
@@ -85,7 +83,7 @@ import numpy as np
 import cv2
 from matplotlib import pyplot as plt
 
-img = cv.imread('C:/Users/mrsam/Downloads/Dev_coins.jpg')
+img = cv2.imread('C:/Users/mrsam/Downloads/Dev_coins.jpg')
 b,g,r = cv2.split(img)
 rgb_img = cv2.merge([r,g,b])
 
@@ -99,18 +97,18 @@ opening = cv2.morphologyEx(thresh,cv2.MORPH_OPEN,kernel, iterations = 2)
 #closing = cv2.morphologyEx(thresh,cv2.MORPH_CLOSE,kernel, iterations = 2)
 
 plt.subplot(131),plt.imshow(rgb_img)
-plt.title('Input Image'), plt.xticks([]), plt.yticks([])
+plt.title('Input Image', color='y'), plt.xticks([]), plt.yticks([])
 plt.subplot(132),plt.imshow(thresh, 'gray')
-plt.title("Otus's binary threshold"), plt.xticks([]), plt.yticks([])
+plt.title("Otus's binary threshold", color='y'), plt.xticks([]), plt.yticks([])
 plt.subplot(133),plt.imshow(opening, 'gray')
-plt.title("morphologyEx"), plt.xticks([]), plt.yticks([])
+plt.title("morphologyEx", color='y'), plt.xticks([]), plt.yticks([])
 plt.show()
 ```
 
+
     
-<p align="center">
-   <img src="https://github.com/SamarthMR/Intern-Work/blob/main/int-cv-1/images/output_13_0.png" alt="Opening"
-</p>
+![png](output_13_0.png)
+    
 
 
 The above output is obtained when the **Opening** effect is applied to the sample.  
@@ -122,7 +120,7 @@ import numpy as np
 import cv2
 from matplotlib import pyplot as plt
 
-img = cv.imread('C:/Users/mrsam/Downloads/Dev_coins.jpg')
+img = cv2.imread('C:/Users/mrsam/Downloads/Dev_coins.jpg')
 b,g,r = cv2.split(img)
 rgb_img = cv2.merge([r,g,b])
 
@@ -136,18 +134,19 @@ kernel = np.ones((2,2),np.uint8)
 closing = cv2.morphologyEx(thresh,cv2.MORPH_CLOSE,kernel, iterations = 2)
 
 plt.subplot(131),plt.imshow(rgb_img)
-plt.title('Input Image'), plt.xticks([]), plt.yticks([])
+plt.title('Input Image', color='y'), plt.xticks([]), plt.yticks([])
 plt.subplot(132),plt.imshow(thresh, 'gray')
-plt.title("Otus's binary threshold"), plt.xticks([]), plt.yticks([])
+plt.title("Otus's binary threshold", color='y'), plt.xticks([]), plt.yticks([])
 plt.subplot(133),plt.imshow(closing, 'gray')
-plt.title("morphologyEx"), plt.xticks([]), plt.yticks([])
+plt.title("morphologyEx", color='y'), plt.xticks([]), plt.yticks([])
 plt.show()
 ```
 
-<p align="center">
-   <img src="https://github.com/SamarthMR/Intern-Work/blob/main/int-cv-1/images/output_15_0.png" alt="Closing"
-</p>
+
     
+![png](output_15_0.png)
+    
+
 
 The above output is obtained when the **Closing** effect is applied to the sample.  
 But, the Closing seems to be working fairly better and even with 2x2 kernel.
@@ -168,7 +167,7 @@ import numpy as np
 import cv2
 from matplotlib import pyplot as plt
 
-img = cv.imread('C:/Users/mrsam/Downloads/Dev_coins.jpg')
+img = cv2.imread('C:/Users/mrsam/Downloads/Dev_coins.jpg')
 b,g,r = cv2.split(img)
 rgb_img = cv2.merge([r,g,b])
 
@@ -185,20 +184,21 @@ closing = cv2.morphologyEx(thresh,cv2.MORPH_CLOSE,kernel, iterations = 2)
 sure_bg = cv2.dilate(closing,kernel,iterations=3)
 
 plt.subplot(221),plt.imshow(rgb_img)
-plt.title('Input Image'), plt.xticks([]), plt.yticks([])
+plt.title('Input Image', color='y'), plt.xticks([]), plt.yticks([])
 plt.subplot(222),plt.imshow(thresh, 'gray')
-plt.title("Otus's binary threshold"), plt.xticks([]), plt.yticks([])
+plt.title("Otus's binary threshold", color='y'), plt.xticks([]), plt.yticks([])
 plt.subplot(223),plt.imshow(closing, 'gray')
-plt.title("morphologyEx:Closing:2x2"), plt.xticks([]), plt.yticks([])
+plt.title("morphologyEx:Closing:2x2", color='y'), plt.xticks([]), plt.yticks([])
 plt.subplot(224),plt.imshow(sure_bg, 'gray')
-plt.title("Dilation"), plt.xticks([]), plt.yticks([])
+plt.title("Dilation", color='y'), plt.xticks([]), plt.yticks([])
 plt.show()
 ```
+
+
     
-<p align="center">
-   <img src="https://github.com/SamarthMR/Intern-Work/blob/main/int-cv-1/images/output_19_0.png" alt="Closing"
-</p>
+![png](output_19_0.png)
     
+
 
 ## **Distance Transform & Threshold**
 
@@ -220,7 +220,7 @@ import numpy as np
 import cv2
 from matplotlib import pyplot as plt
 
-img = cv.imread('C:/Users/mrsam/Downloads/Dev_coins.jpg')
+img = cv2.imread('C:/Users/mrsam/Downloads/Dev_coins.jpg')
 b,g,r = cv2.split(img)
 rgb_img = cv2.merge([r,g,b])
 
@@ -243,28 +243,29 @@ dist_transform = cv2.distanceTransform(sure_bg,cv2.DIST_L2,3)
 ret, sure_fg = cv2.threshold(dist_transform,0.1*dist_transform.max(),255,0)
 
 plt.subplot(321),plt.imshow(rgb_img)
-plt.title('Input Image'), plt.xticks([]), plt.yticks([])
+plt.title('Input Image', color='y'), plt.xticks([]), plt.yticks([])
 plt.subplot(322),plt.imshow(thresh, 'gray')
-plt.title("Otsu's binary threshold"), plt.xticks([]), plt.yticks([])
+plt.title("Otsu's binary threshold", color='y'), plt.xticks([]), plt.yticks([])
 
 plt.subplot(323),plt.imshow(closing, 'gray')
-plt.title("morphologyEx:Closing:2x2"), plt.xticks([]), plt.yticks([])
+plt.title("morphologyEx:Closing:2x2", color='y'), plt.xticks([]), plt.yticks([])
 plt.subplot(324),plt.imshow(sure_bg, 'gray')
-plt.title("Dilation"), plt.xticks([]), plt.yticks([])
+plt.title("Dilation", color='y'), plt.xticks([]), plt.yticks([])
 
 plt.subplot(325),plt.imshow(dist_transform, 'gray')
-plt.title("Distance Transform"), plt.xticks([]), plt.yticks([])
+plt.title("Distance Transform", color='y'), plt.xticks([]), plt.yticks([])
 plt.subplot(326),plt.imshow(sure_fg, 'gray')
-plt.title("Thresholding"), plt.xticks([]), plt.yticks([])
+plt.title("Thresholding", color='y'), plt.xticks([]), plt.yticks([])
 
 plt.tight_layout()
 plt.show()
 ```
 
-<p align="center">
-   <img src="https://github.com/SamarthMR/Intern-Work/blob/main/int-cv-1/images/output_22_0.png" alt="Closing"
-</p>
+
     
+![png](output_22_0.png)
+    
+
 
 ## **Marker-based Watershed**
 
@@ -276,7 +277,7 @@ import numpy as np
 import cv2
 from matplotlib import pyplot as plt
 
-img = cv.imread('C:/Users/mrsam/Downloads/Dev_coins.jpg')
+img = cv2.imread('C:/Users/mrsam/Downloads/Dev_coins.jpg')
 b,g,r = cv2.split(img)
 rgb_img = cv2.merge([r,g,b])
 
@@ -315,36 +316,36 @@ markers = cv2.watershed(img,markers)
 img[markers == -1] = [255,0,0]
 
 plt.subplot(421),plt.imshow(rgb_img)
-plt.title('Input Image'), plt.xticks([]), plt.yticks([])
+plt.title('Input Image', color='y'), plt.xticks([]), plt.yticks([])
 plt.subplot(422),plt.imshow(thresh, 'gray')
-plt.title("Otsu's binary threshold"), plt.xticks([]), plt.yticks([])
+plt.title("Otsu's binary threshold", color='y'), plt.xticks([]), plt.yticks([])
 
 plt.subplot(423),plt.imshow(closing, 'gray')
-plt.title("morphologyEx:Closing:2x2"), plt.xticks([]), plt.yticks([])
+plt.title("morphologyEx:Closing:2x2", color='y'), plt.xticks([]), plt.yticks([])
 plt.subplot(424),plt.imshow(sure_bg, 'gray')
-plt.title("Dilation"), plt.xticks([]), plt.yticks([])
+plt.title("Dilation", color='y'), plt.xticks([]), plt.yticks([])
 
 plt.subplot(425),plt.imshow(dist_transform, 'gray')
-plt.title("Distance Transform"), plt.xticks([]), plt.yticks([])
+plt.title("Distance Transform", color='y'), plt.xticks([]), plt.yticks([])
 plt.subplot(426),plt.imshow(sure_fg, 'gray')
-plt.title("Thresholding"), plt.xticks([]), plt.yticks([])
+plt.title("Thresholding", color='y'), plt.xticks([]), plt.yticks([])
 
 plt.subplot(427),plt.imshow(unknown, 'gray')
-plt.title("Unknown"), plt.xticks([]), plt.yticks([])
+plt.title("Unknown", color='y'), plt.xticks([]), plt.yticks([])
 
 plt.subplot(428),plt.imshow(img, 'gray')
-plt.title("Result from Watershed"), plt.xticks([]), plt.yticks([])
+plt.title("Result from Watershed", color='y'), plt.xticks([]), plt.yticks([])
 
 plt.tight_layout()
 plt.show()
 ```
 
-<p align="center">
-   <img src="https://github.com/SamarthMR/Intern-Work/blob/main/int-cv-1/images/output_24_0.png" alt="Closing"
-</p>
+
+    
+![png](output_24_0.png)
     
 
-The result obtained doesn't look successful as expected during the process, especially during the Dilation and Thresholding process. We have used very small dilation and threshold.
-Probably, most failures occured due to the glossy coins. So, we had to come up with a method to deal with those coins, therefore **Marker-based Watershed Algorithm** was used to obtain the required results.
+
+The result obtained doesn't look successful as expected during the process, especially during the Dilation and Thresholding process. We have used very small dilation and threshold. Probably, most failures occured due to the glossy coins. So, we had to come up with a method to deal with those coins, therefore **Marker-based Watershed Algorithm** was used to obtain the required results.
 
 
