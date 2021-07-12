@@ -14,10 +14,10 @@ _The [file](https://github.com/SamarthMR/Intern-Work/blob/main/int-cv-1/Image%20
 6. Distance Transform & Threshold
 7. Final Code for Marker-based Watershed Algortihm
 
-### Team Name: int-cv-1
-#### Team members name and work distribution
+### **Team Name: int-cv-1**
+#### **Team members name and work distribution**
 | Name | Work Done |
 | ------ | ------ |
 | Samarth M R | Content, Markdown file, ipynb file (Notebook) |
-| M Rakesh | Video Recording |
-| Sri Varthan | Video Editing |
+| M Rakesh | Content, Video Recording |
+| Sri Varthan | Content, Video Editing |
