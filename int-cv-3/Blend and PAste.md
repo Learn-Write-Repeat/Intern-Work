@@ -7,11 +7,11 @@ We will be focussing mainly on performing Blending and Pasting operations using 
 Images used in the code:
 
 &nbsp;
-![](watermark.png)
+![](images/watermark.png)
 
 &nbsp;
 
-![](bg.png)
+![](images/bg.png)
 
 &nbsp;
 
@@ -185,9 +185,8 @@ cv2.waitKey(0)
 &nbsp;
 
 ### **PASTING VS BLENDING**
-&nbsp;
-    $~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~$ PASTING $~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~$ BLENDING                  
-![](both.png)
+&nbsp;               
+![](images/both.png)
 
 
 &nbsp;
