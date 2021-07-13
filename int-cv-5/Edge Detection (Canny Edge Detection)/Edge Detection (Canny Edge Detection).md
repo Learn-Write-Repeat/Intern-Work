@@ -1,3 +1,5 @@
+![images/Blue Quote Technology Google Classroom Header.png](images/Blue Quote Technology Google Classroom Header.png)
+
 # Edge Detection (Canny Edge Detection)
 
 > The Canny edge detector is an edge detection operator that detects a wide range of edges in images using a multi-stage algorithm. It was created in 1986 by John F. Canny.
@@ -6,7 +8,7 @@
     - **Noise Reduction**: Because edge detection is sensitive to image noise, the first step is to remove the noise with a 5x5 Gaussian filter.
     - **Finding the Image's Intensity Gradient**: The smoothed image is then filtered in both the horizontal and vertical directions with a Sobel kernel to obtain the first derivative in both the horizontal (Gx) and vertical (Vx) directions (Gy). We can find the edge gradient and direction for each pixel using these two images:
 
-        ![Edge%20Detection%20(Canny%20Edge%20Detection)%204f4082ede8824d3da73eb36b0f0ba1e6/Screenshot_145.png](Edge%20Detection%20(Canny%20Edge%20Detection)%204f4082ede8824d3da73eb36b0f0ba1e6/Screenshot_145.png)
+        ![images/Screenshot_145.png](images/Screenshot_145.png)
 
     - **Non-maximum Suppression**: After obtaining the gradient magnitude and direction, the image is fully scanned to remove any unwanted pixels that do not form the edge. For this, each pixel is checked to see if it is a local maximum in its neighbourhood in the gradient direction.
     - **Hysteresis Thresholding**: This stage determines which edges are genuine and which are not. We'll need two threshold values, minThres and maxThres, for this. Any edges with an intensity gradient greater than maxThres are certain to be edges, while those with an intensity gradient less than minThres are certain to be non-edges, and should be discarded. Based on their connectivity, those who fall between these two thresholds are classified as edges or non-edges. They are considered to be part of edges if they are connected to "sure-edge" pixels. Otherwise, they are discarded as well.
@@ -23,7 +25,7 @@
     cv2.imshow(img) #Displaying the input image
     ```
 
-    ![Edge%20Detection%20(Canny%20Edge%20Detection)%204f4082ede8824d3da73eb36b0f0ba1e6/messi-argentina-celebrate-2021_s7hpit9bh8o61sxgavsr1twhb.jpg](Edge%20Detection%20(Canny%20Edge%20Detection)%204f4082ede8824d3da73eb36b0f0ba1e6/messi-argentina-celebrate-2021_s7hpit9bh8o61sxgavsr1twhb.jpg)
+    ![images/messi-argentina-celebrate-2021_s7hpit9bh8o61sxgavsr1twhb.jpg](images/messi-argentina-celebrate-2021_s7hpit9bh8o61sxgavsr1twhb.jpg)
 
     > *Google Colab does not support cv2.imshow(<image>). Instead use*
 
@@ -40,7 +42,7 @@
     cv2_imshow(img_blur)
     ```
 
-    ![Edge%20Detection%20(Canny%20Edge%20Detection)%204f4082ede8824d3da73eb36b0f0ba1e6/download_(17).png](Edge%20Detection%20(Canny%20Edge%20Detection)%204f4082ede8824d3da73eb36b0f0ba1e6/download_(17).png)
+    ![images/download_(17).png](images/download_(17).png)
 
     > We try to calculate some healthy threshold values with the help of the median pixel value from the numpy array (image). Then, we call the cv2.Canny() function and experiment with our output by altering these threshold values.
 
@@ -51,4 +53,4 @@
     cv2_imshow(edges)
     ```
 
-    ![Edge%20Detection%20(Canny%20Edge%20Detection)%204f4082ede8824d3da73eb36b0f0ba1e6/download_(15).png](Edge%20Detection%20(Canny%20Edge%20Detection)%204f4082ede8824d3da73eb36b0f0ba1e6/download_(15).png)
+    ![images/download_(15).png](images/download_(15).png)
