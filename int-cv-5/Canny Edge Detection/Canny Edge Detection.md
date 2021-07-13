@@ -30,8 +30,8 @@
     > *Google Colab does not support cv2.imshow(<image>). Instead use*
 
     ```python
-    *from google.colab.patches import cv2_imshow
-    cv2_imshow(img) #Does the same work as cv2.imshow(img*
+    from google.colab.patches import cv2_imshow
+    cv2_imshow(img) #Does the same work as cv2.imshow(img)
     ```
 
     > Because all edge detection results are easily influenced by image noise, it is critical to filter out the noise to avoid false detection. A Gaussian filter kernel is convolved with the image to smooth it out. This step smoothers the image slightly to reduce the effects of visible noise on the edge detector.
