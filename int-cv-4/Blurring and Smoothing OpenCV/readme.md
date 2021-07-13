@@ -1,4 +1,4 @@
-# Contours
+# Blurring and smoothing images in OpenCV
 
 - **Team:** **int-cv-4**
 
