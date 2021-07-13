@@ -26,7 +26,7 @@
      
 
 - Work flow :bookmark_tabs:
-    - [Anish Rohekar](): Worked on Content Writing and Video making on the subtopic ***"Introduction"*** and ***"Averaging and Gaussian Blurring in blurring and smoothing techniques".***
-    - [Garima Saluja](): Worked on Video editing.
-    - [Mohd Mohsin Khan](): Worked on Content Writing and Video making on the subtopic ***"Filtering"*** and ***"Median Blurring and Bilateral Blurring in Blurring and Smoothing techniques"***.
+    - [Anish Rohekar](): Worked on Content Writing on the subtopic ***"Introduction"*** and both content writing and video making in ***"Averaging and Gaussian Blurring in blurring and smoothing techniques".***
+    - [Garima Saluja](): Worked on video making for ***"Introduction" and "Filtering"*** and Video editing.
+    - [Mohd Mohsin Khan](): Worked on Content Writing on the subtopic ***"Filtering"*** and both content writing and video making in ***"Median Blurring and Bilateral Blurring in Blurring and Smoothing techniques"***.
 
