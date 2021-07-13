@@ -1,5 +1,5 @@
 <p align="center" width="100%">
-    <img width="70%" src="https://github.com/Scripturient101/demo/blob/main/Images/Readfile_banner.png"> 
+    <img width="70%" src="Images/Readfile_banner.png"> 
 </p>
 
 <p align="center">
