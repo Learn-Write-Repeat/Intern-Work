@@ -1,4 +1,4 @@
-![images/Blue Quote Technology Google Classroom Header.png](images/Blue Quote Technology Google Classroom Header.png)
+![images/cover.png](images/cover.png)
 
 # Edge Detection (Canny Edge Detection)
 
