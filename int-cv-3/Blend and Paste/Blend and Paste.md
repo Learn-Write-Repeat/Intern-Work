@@ -1,6 +1,6 @@
-# ARITHMETIC & LOGICAL IMAGE OPERATIONS
+# BLENDING & PASTING IMAGES USING OPENCV
 
-These are referred to as Basic Arithmetic Operations because OpenCV is simply performing some common math with the pixels for the final effect. 
+Blending and Pasting operations are commonly referred to as Basic Arithmetic Operations because OpenCV is performing some common math with the pixels for the final effect. 
 
 We will be focussing mainly on performing Blending and Pasting operations using OpenCV. These operations are used to mix two images or to simply put one image on top of another. They are usually performed using Grphic Designing tools like Adobe Illustrator, Photoshop, etc. but here, using OpenCV we will learn how to automate this process.
 
