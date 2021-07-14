@@ -19,5 +19,5 @@ _The [file](https://github.com/SamarthMR/Intern-Work/blob/main/int-cv-1/Image%20
 | Name | Work Done |
 | ------ | ------ |
 | Samarth M R | Content, Markdown file, ipynb file (Notebook) |
-| M Rakesh | Content, Video Recording |
-| Sri Varthan | Content, Video Editing |
+| M Rakesh | Video Recording + Video Editing |
+| Sri Varthan | Content |
