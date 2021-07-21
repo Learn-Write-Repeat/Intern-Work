@@ -21,4 +21,4 @@ Financial industry and trading — companies use ML in fraud investigations and 
 ### Team Members
 * *Hemachandiran.T*   :   Content Writing,Editing Video, Readme.md,creating pull request
 * *Nishi Sus*   :  Content writing,Video Recording and Explanation
-* *Shivash*   :   content writing
+* *Shivansh*   :   content writing
