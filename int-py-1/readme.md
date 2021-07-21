@@ -5,8 +5,8 @@
      ||Name|
      |-|-|
      |1|[Lourde Mary.T]()|
-     |2|[Venkata Naga SaiPratheek Sriram]()|
-     |3|[Pragya Khanna]()|
+     |2|[Pragya Khanna]()|
+     |3|[Venkata Naga SaiPratheek Sriram]()|
 
 - **About the topic:** 
     - This topic consists of [Introduction To Python]()
@@ -29,7 +29,8 @@
     8)Keywords in Python.
 
 - Work flow :bookmark_tabs:
-    - [Lourde Mary.T](): Worked on Content Writing,Markdown and Video Editing.
-    - [Venkata Naga SaiPratheek Sriram](): Worked on Content Writing and Markdown.
-    - [Pragya Khanna](): 
+    - [Lourde Mary.T](): Worked on Content Writing and Markdown.
+    - [Pragya Khanna](): Worked on video recording.
+    - [Venkata Naga SaiPratheek Sriram](): Worked on Content Writing,Markdown and video editing.
+   
 

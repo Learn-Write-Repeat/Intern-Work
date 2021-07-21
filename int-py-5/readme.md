@@ -8,4 +8,6 @@
 - Sandhya    : Types of loops and its requirements.
 
 ## Video recording and editing:
-- All the three members.
+- Video recording and explanation - Sneha S
+
+- Video editing - Mythili K

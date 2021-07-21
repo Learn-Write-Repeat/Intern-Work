@@ -1,7 +1,7 @@
 ## Group - int-ml-3
 ## Topic - Numpy
-## Group members - 
-* ***Samiksha Bhavsar***    - Content writing, Creating md file for overall content, Creating Pull request, Video recording & editing
-* ***Kusupati Deekshitha*** - Content writing, Creativity suggestions
+## Group members -
+* ***Samiksha Bhavsar*** - Content writing, Creativity suggestion, making markdown file, video creating and editing.
+* ***Kusupati Deekshitha*** - Content writing, Creativity suggestion
 * ***Subham Nanda***        - Content writing, Creativity suggestions
-* ***Maksuda Rahman Fariya***
+

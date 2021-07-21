@@ -9,4 +9,5 @@ Linear regression performs the task to predict a dependent variable value (y) ba
 | ------ | ------ |
 | *Hemachandiran.T* | Content, markdown file and create pull request  |
 | *Nishi Sus* | Video Recording and Explanation |
-| *Shivash* | Editing video |
+| *Shivansh* | Editing video |
+
