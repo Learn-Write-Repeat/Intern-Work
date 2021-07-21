@@ -15,8 +15,7 @@
 
 The below diagram explains the working of the K-means Clustering Algorithm:
 
-<img src='devincept kmeans canvas.png' width=1000 height=20>
-
+![k-means](https://github.com/Hemachandirant/Intern-Work/blob/main/int-ml-1/K-Means%20clustering/devincept%20kmeans%20canvas.png?raw=true)
 # How does the K-Means Algorithm Work?
 The working of the K-Means algorithm is explained in the below steps:
 
