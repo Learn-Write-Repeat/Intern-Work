@@ -2,7 +2,6 @@
 
 &nbsp;
 ## **UNDERSTANDING FEATURES**
----
 Features in images are matching points between frames of an environment which define certain characteristics of that environment. These characteristics help in easy recognition of the environment. Features are uniquely recognizable, i.e. features of one environment are only unique to that environment.
 
 There are 3 main types of features:
@@ -14,7 +13,6 @@ There are 3 main types of features:
 
 
 ## **CORNERS**
----
 
 ### **What are Corners?**
 Regions in the image with large variation in pixel intensity in all the directions are known as Corners. A corner is nothing but the intersection of two edges. This intersection or Corner is the point where the directions of both the edges change.
