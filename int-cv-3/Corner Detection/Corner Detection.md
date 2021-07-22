@@ -23,18 +23,20 @@ For the simple reason of Feature Extraction of course!
 
 &nbsp;
 ### **Where is Corner Detection used?**
-to track things like motion, do 3D modeling, and recognize objects, shapes, and characters.
++ Motion Object tracking
++ 3D Modelling
++ Detecting and Recognizing Objects, Shapes, etc.
 
 &nbsp;
 ### **How to perform Corner Detction?**
 There are 2 most commonly used techniques:
    1. [Harris Corner Detection](#harris-corner-detection)
-   1. [Shi-Tomasi Corner Detection](#shitomasi-corner-detection)
+   1. [Shi-Tomasi Corner Detection](#shi-tomasi-corner-detection)
 
 
 &nbsp;
 
-**HARRIS CORNER DETECTION**
+#### **HARRIS CORNER DETECTION**
 
 This method was formulated by  Chris Harris & Mike Stephens in their paper ***A Combined Corner and Edge Detector*** in 1988. 
 They came up with a simple mathematical formula to identify the pixels with large variation in intensities in all directions.
@@ -79,7 +81,7 @@ cv2.waitKey(0)
 
 &nbsp;
 
-**SHI-TOMASI CORNER DETECTION**
+#### **SHI-TOMASI CORNER DETECTION**
 
 This method is a modified version of the Harris Corner Detection method. In 1994, J. Shi and C. Tomasi made a modification to it in their paper ***Good Features to Track*** which shows better results compared to Harris Corner Detector.
 
