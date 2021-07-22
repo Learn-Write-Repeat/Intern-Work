@@ -86,7 +86,7 @@ cv2.imshow('image',image)
 
 - This is what our final output looks like-
 
-<img src="D:\projects\markdown\Face detection\output.jpg" alt="output" style="zoom:50%;" />
+<img src="output.jpg" alt="output" style="zoom:50%;" />
 
 
 
