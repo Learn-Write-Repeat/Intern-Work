@@ -41,7 +41,9 @@ There are 2 most commonly used techniques:
 This method was formulated by  Chris Harris & Mike Stephens in their paper ***A Combined Corner and Edge Detector*** in 1988. 
 They came up with a simple mathematical formula to identify the pixels with large variation in intensities in all directions.
 
-**Formula:**  ![](images/Harris Formula.png)
+**Formula:**  
+
+![](images/HarrisFormula.png)
 
 **References:**
 1. https://docs.opencv.org/4.5.2/dc/d0d/tutorial_py_features_harris.html
