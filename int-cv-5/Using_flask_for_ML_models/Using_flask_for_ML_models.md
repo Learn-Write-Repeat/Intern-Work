@@ -23,34 +23,10 @@
     - **Flask**==1.1.1
     - **numpy**==1.18.1
     - **scikit_learn**==0.22.1
-    - **gunicorn**==20.0.4
-> The model is saved using the Pickle library after it has been built. Then, Flask is used for the web server. The ML prediction model is given as follows —
+    - **gunicorn**==20.0.
 
-    python
-    import pandas as pd
-    import numpy as np
-    import pickle
+### The model is saved using the Pickle library after it has been built. Then, Flask is used for the web server. **The ML prediction model is given here** [![model.ipynb](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1GZcz6LaA1uO17PQOk_unOVgejJar4XCe)
 
-    df = pd.read_csv('Dataset.csv')
-    df = df.drop(columns = ['Id'])
-
-    X = np.array(df.iloc[:, 0:4])
-    y = np.array(df.iloc[:, 4:])
-
-    from sklearn.preprocessing import LabelEncoder
-    le = LabelEncoder()
-    y = le.fit_transform(y.reshape(-1))
-
-    from sklearn.model_selection import train_test_split
-    X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2)
-
-    from sklearn.linear_model import LogisticRegression
-    sv = LogisticRegression().fit(X_train,y_train)
-
-    # print metric to get performance
-    print("Accuracy: ",sv.score(X_test, y_test) * 100)
-
-    pickle.dump(sv, open('iri.pkl', 'wb'))
 
 - ### What does deploying A Machine Learning model entail?
 
