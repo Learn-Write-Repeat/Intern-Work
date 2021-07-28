@@ -25,7 +25,7 @@
     - **scikit_learn**==0.22.1
     - **gunicorn**==20.0.
 
-### The model is saved using the Pickle library after it has been built. Then, Flask is used for the web server. **The ML prediction model is given here** [![model.ipynb](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1GZcz6LaA1uO17PQOk_unOVgejJar4XCe)
+### The model is saved using the Pickle library after it has been built. Then, Flask is used for the web server. **[The ML prediction model is given here](https://colab.research.google.com/drive/1GZcz6LaA1uO17PQOk_unOVgejJar4XCe)** [![model.ipynb](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1GZcz6LaA1uO17PQOk_unOVgejJar4XCe)
 
 
 - ### What does deploying A Machine Learning model entail?
