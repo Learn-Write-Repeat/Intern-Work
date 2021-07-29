@@ -8,9 +8,9 @@
 
 |Member|Work Done|
 |-|-|
-|[Suvra Shaw](https://github.com/suvrashaw)|Made the content and managed the GitHub submission.|
-|[Govind Jaiswal](https://github.com/Govindbro)|Will be recording and editing the video.|
-|[Debashis Saha](https://github.com/DebaRobot)|Developed the program.|
+|[Suvra Shaw](https://github.com/suvrashaw)|Made the content, managed the GitHub submission, contributed to the code and will be recording the video.|
+|[Govind Jaiswal](https://github.com/Govindbro)|Contributed to the code and will be editing the video.|
+|[Debashis Saha](https://github.com/DebaRobot)|Contributed to the code the program.|
 
 ### Overview of the Content
 
