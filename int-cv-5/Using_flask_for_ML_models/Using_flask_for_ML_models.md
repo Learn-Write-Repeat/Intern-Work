@@ -16,9 +16,7 @@
     5. **[iris.pkl](https://github.com/suvrashaw/Intern-Work/blob/main/int-cv-5/Using_flask_for_ML_models/src/iri.pkl)**: This is the pickel file, which has been saved as a model.
     6. **[iris.py](https://github.com/suvrashaw/Intern-Work/blob/main/int-cv-5/Using_flask_for_ML_models/src/iris.py)**: The model is created in this python file.
 
-> Other files like Procfile, requirements.txt, etc are for the Heroku deployment.
-
-- ### Requirements —
+- ### Requirements (saved into a text file for Heroku deployment) —
     - **Flask**==1.1.1
     - **gunicorn**==19.9.0
     - itsdangerous==1.1.0
@@ -30,7 +28,7 @@
     - **scikit-learn**>=0.18
     - **pandas**>=0.19
 
-### The model is saved using the Pickle library after it has been built. Then, Flask is used for the web server. The ML prediction model is given here
+### The model is saved using the Pickle library after it has been built. Then, Flask is used for the web server. The SVM model is given here —
 
         import pandas as pd
         df=pd.read_csv("Iris.csv").drop(columns=['Id'])
