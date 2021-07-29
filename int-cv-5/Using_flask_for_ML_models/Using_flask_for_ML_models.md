@@ -19,13 +19,34 @@
 > Other files like Procfile, requirements.txt, basics.py, etc are for the Heroku deployment.
 
 - ### Requirements —
-    - **pandas**==1.0.3
-    - **Flask**==1.1.1
-    - **numpy**==1.18.1
-    - **scikit_learn**==0.22.1
-    - **gunicorn**==20.0.
+    - Flask==1.1.1
+    - gunicorn==19.9.0
+    - itsdangerous==1.1.0
+    - Jinja2==2.10.1
+    - MarkupSafe==1.1.1
+    - Werkzeug==0.15.5
+    - numpy>=1.9.2
+    - scipy>=0.15.1
+    - scikit-learn>=0.18
+    - pandas>=0.19
 
-### The model is saved using the Pickle library after it has been built. Then, Flask is used for the web server. **[The ML prediction model is given here](https://colab.research.google.com/drive/1GZcz6LaA1uO17PQOk_unOVgejJar4XCe)** [![model.ipynb](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1GZcz6LaA1uO17PQOk_unOVgejJar4XCe)
+### The model is saved using the Pickle library after it has been built. Then, Flask is used for the web server. The ML prediction model is given here
+
+        python
+        import pandas as pd
+        df=pd.read_csv("Iris.csv").drop(columns=['Id'])
+
+        from sklearn.preprocessing import LabelEncoder
+        df['Species'] = LabelEncoder().fit_transform(df['Species'])
+
+        from sklearn.model_selection import train_test_split
+        x_train, x_test, y_train, y_test = train_test_split(df.drop(columns=['Species']), df['Species'], test_size=0.3)
+
+        from sklearn.svm import SVC
+        SVM = SVC(kernel = 'linear').fit(x_train, y_train)
+
+        import pickle
+        pickle.dump(SVM, open("Iris.pkl", "wb"))
 
 
 - ### What does deploying A Machine Learning model entail?
@@ -56,7 +77,8 @@
         import pickle
         import numpy as np
 
-        model = pickle.load(open('iri.pkl', 'rb'))
+        model = pickle.load(open('iris.pkl', 'rb'))
+
         app = Flask(__name__)
 
         @app.route('/')
