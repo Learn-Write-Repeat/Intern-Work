@@ -11,12 +11,12 @@
 - ### Structure —
     1. **[templates](https://github.com/suvrashaw/Intern-Work/blob/main/int-cv-5/Using_flask_for_ML_models/src/templates)**: The HTML files are kept in this folder. 
     2. **[static](https://github.com/suvrashaw/Intern-Work/blob/main/int-cv-5/Using_flask_for_ML_models/src/static)**: Static files, such as images, are stored in this folder.
-    3. [Dataset.csv](https://github.com/suvrashaw/Intern-Work/blob/main/int-cv-5/Using_flask_for_ML_models/src/Dataset.csv): This is the sample dataset, converted to csv. Download the Dataset from [Here](https://www.kaggle.com/uciml/iris/download).
+    3. [iris.csv](https://github.com/suvrashaw/Intern-Work/blob/main/int-cv-5/Using_flask_for_ML_models/src/Dataset.csv): This is the sample dataset, converted to csv. Download the Dataset from [Here](https://www.kaggle.com/uciml/iris/download).
     4. **[app.py](https://github.com/suvrashaw/Intern-Work/blob/main/int-cv-5/Using_flask_for_ML_models/src/app.py)**: This is a python file that contains the code for our application. The Flask Server is started here.
-    5. **[iri.pkl](https://github.com/suvrashaw/Intern-Work/blob/main/int-cv-5/Using_flask_for_ML_models/src/iri.pkl)**: This is the pickel file, which has been saved as a model.
+    5. **[iris.pkl](https://github.com/suvrashaw/Intern-Work/blob/main/int-cv-5/Using_flask_for_ML_models/src/iri.pkl)**: This is the pickel file, which has been saved as a model.
     6. **[iris.py](https://github.com/suvrashaw/Intern-Work/blob/main/int-cv-5/Using_flask_for_ML_models/src/iris.py)**: The model is created in this python file.
 
-> Other files like Procfile, requirements.txt, basics.py, etc are for the Heroku deployment.
+> Other files like Procfile, requirements.txt, etc are for the Heroku deployment.
 
 - ### Requirements —
     - **Flask**==1.1.1
