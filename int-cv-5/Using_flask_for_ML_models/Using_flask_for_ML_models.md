@@ -19,20 +19,19 @@
 > Other files like Procfile, requirements.txt, basics.py, etc are for the Heroku deployment.
 
 - ### Requirements —
-    - Flask==1.1.1
-    - gunicorn==19.9.0
+    - **Flask**==1.1.1
+    - **gunicorn**==19.9.0
     - itsdangerous==1.1.0
     - Jinja2==2.10.1
     - MarkupSafe==1.1.1
     - Werkzeug==0.15.5
-    - numpy>=1.9.2
-    - scipy>=0.15.1
-    - scikit-learn>=0.18
-    - pandas>=0.19
+    - **numpy**>=1.9.2
+    - **scipy**>=0.15.1
+    - **scikit-learn**>=0.18
+    - **pandas**>=0.19
 
 ### The model is saved using the Pickle library after it has been built. Then, Flask is used for the web server. The ML prediction model is given here
 
-        python
         import pandas as pd
         df=pd.read_csv("Iris.csv").drop(columns=['Id'])
 
@@ -72,7 +71,6 @@
     - A lot of documentation
 > Now that you've built a variety of predictive models, it's time to learn how to use them in real-time to make predictions. When you deploy your model in production, you can always check its ability to generalize.
 
-        python
         from flask import Flask, render_template, request
         import pickle
         import numpy as np
