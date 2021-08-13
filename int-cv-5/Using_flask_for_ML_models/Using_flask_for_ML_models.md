@@ -11,28 +11,25 @@
 - ### Structure —
     1. **[templates](https://github.com/suvrashaw/Intern-Work/blob/main/int-cv-5/Using_flask_for_ML_models/src/templates)**: The HTML files are kept in this folder. 
     2. **[static](https://github.com/suvrashaw/Intern-Work/blob/main/int-cv-5/Using_flask_for_ML_models/src/static)**: Static files, such as images, are stored in this folder.
-    3. [Dataset.csv](https://github.com/suvrashaw/Intern-Work/blob/main/int-cv-5/Using_flask_for_ML_models/src/Dataset.csv): This is the sample dataset, converted to csv. Download the Dataset from [Here](https://www.kaggle.com/uciml/iris/download).
+    3. [iris.csv](https://github.com/suvrashaw/Intern-Work/blob/main/int-cv-5/Using_flask_for_ML_models/src/Dataset.csv): This is the sample dataset, converted to csv. Download the Dataset from [Here](https://www.kaggle.com/uciml/iris/download).
     4. **[app.py](https://github.com/suvrashaw/Intern-Work/blob/main/int-cv-5/Using_flask_for_ML_models/src/app.py)**: This is a python file that contains the code for our application. The Flask Server is started here.
-    5. **[iri.pkl](https://github.com/suvrashaw/Intern-Work/blob/main/int-cv-5/Using_flask_for_ML_models/src/iri.pkl)**: This is the pickel file, which has been saved as a model.
+    5. **[iris.pkl](https://github.com/suvrashaw/Intern-Work/blob/main/int-cv-5/Using_flask_for_ML_models/src/iri.pkl)**: This is the pickel file, which has been saved as a model.
     6. **[iris.py](https://github.com/suvrashaw/Intern-Work/blob/main/int-cv-5/Using_flask_for_ML_models/src/iris.py)**: The model is created in this python file.
 
-> Other files like Procfile, requirements.txt, basics.py, etc are for the Heroku deployment.
-
-- ### Requirements —
-    - Flask==1.1.1
-    - gunicorn==19.9.0
+- ### Requirements (saved into a text file for Heroku deployment) —
+    - **Flask**==1.1.1
+    - **gunicorn**==19.9.0
     - itsdangerous==1.1.0
     - Jinja2==2.10.1
     - MarkupSafe==1.1.1
     - Werkzeug==0.15.5
-    - numpy>=1.9.2
-    - scipy>=0.15.1
-    - scikit-learn>=0.18
-    - pandas>=0.19
+    - **numpy**>=1.9.2
+    - **scipy**>=0.15.1
+    - **scikit-learn**>=0.18
+    - **pandas**>=0.19
 
-### The model is saved using the Pickle library after it has been built. Then, Flask is used for the web server. The ML prediction model is given here
+### The model is saved using the Pickle library after it has been built. Then, Flask is used for the web server. The SVM model is given here —
 
-        python
         import pandas as pd
         df=pd.read_csv("Iris.csv").drop(columns=['Id'])
 
@@ -72,7 +69,6 @@
     - A lot of documentation
 > Now that you've built a variety of predictive models, it's time to learn how to use them in real-time to make predictions. When you deploy your model in production, you can always check its ability to generalize.
 
-        python
         from flask import Flask, render_template, request
         import pickle
         import numpy as np
